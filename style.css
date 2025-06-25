@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.jsr{
+    width:100%;
+    
+}
+.toparea{
+    background:#B75751;
+    padding:10px 0;
+    color:white;
+}
+.logoarea{
+    background:#F3C38C;
+    padding:50px 0;
+}
+.logoarea img{
+    width:110px;
+}
+.logoarea h1{
+    color:#743540;
+}
+.parea{
+    padding:50px 0;
+}
+.parea p{
+    text-align:justify;
+}
+.parea p:last-child{
+    text-align:right;
+}
