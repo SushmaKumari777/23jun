@@ -31,3 +31,11 @@ body{
 .parea p:last-child{
     text-align:right;
 }
+.d-flex .btn{
+    border-color:#0B6EFD;
+    color:#0B6EFD
+}
+.d-flex .btn:hover{
+background: #0B6EFD;
+color:white;
+}
