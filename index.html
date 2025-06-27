@@ -32,7 +32,7 @@
                 <div class="col-md-3 col-12">
                     <img src="logo.png" alt="">
                 </div>
-                <div class="col-mid-9 col-12">
+                <div class="col-md-9 col-12">
                     <h1>Government Polytechnic Adityapur</h1>
                     <h4>Department of Higher & Technical Education, Government of Jharkhand</h4>
                 </div>
@@ -109,7 +109,7 @@
             <div class="row">
                 <div class="col">
                     
-                    <div id="carouselExampleCaptions" class="carousel slide">
+                    <div id="carouselExampleCaptionsFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -117,7 +117,7 @@
                         </div>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="https://gpa.ac.in/img/slide_road_safety.webp" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                               <h5>First slide label</h5>
                               <p>Some representative placeholder content for the first slide.</p>
@@ -145,11 +145,11 @@
                             </div>
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsFade" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsFade" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
@@ -167,10 +167,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-mid-3 col-12">
+                <div class="col-md-3 col-12">
                     <img src="sp.jpg" alt="" class="jsr">
                 </div>
-                <div class="col-mid-9 col-12">
+                <div class="col-md-9 col-12">
                     <p>This is the era of liberalization, privatization and globalization. The need of the hour is
                         training individuals in dynamic way and make them to face different challenges thrown up by
                         rapidly changing socio-economic technical scenario at the Global level. The Younger Generation
@@ -196,25 +196,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-mid-3 col-12">
+                <div class="col-md-3 col-12">
                     <div class="box">
                         <img src="cs.webp" alt="" class="jsr">
                         <h5>COMPUTER SCIENCE ENGINEERING</h5>
                     </div>
                 </div>
-                <div class="col-mid-3 col-12">
+                <div class="col-md-3 col-12">
                     <div class="box">
                         <img src="ele.webp" alt="" class="jsr">
                         <h5>ELECTRICAL ENGINEERING</h5>
                     </div>
                 </div>
-                <div class="col-mid-3 col-12">
+                <div class="col-md-3 col-12">
                     <div class="box">
                         <img src="mech2.webp" alt="" class="jsr">
                         <h5>MECHANICAL ENGINEERING</h5>
                     </div>
                 </div>
-                <div class="col-mid-3 col-12">
+                <div class="col-md-3 col-12">
                     <div class="box">
                         <img src="meta.webp" alt="" class="jsr">
                         <h5>METALLURGICAL ENGINEERING</h5>
@@ -231,13 +231,13 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-mid-3 col-12">
+                <div class="col-md-3 col-12">
                     <img src="left-arrow.png" alt="">
                     <h2> Milestone Achievement</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-mid-4 col-12">
+                <div class="col-md-4 col-12">
                     <div class="square">
                         <img src="su1.jpg" alt="" class="jsr">
                         <h5>हिंदी महोत्सव उपविजेता</h5>
@@ -245,7 +245,7 @@
 
                     </div>
                 </div>
-                <div class="col-mid-4 col-12">
+                <div class="col-md-4 col-12">
                     <div class="square">
                         <img src="aj1.jpg" alt="" class="jsr">
                         <h5> Technika 4.0 Winner</h5>
@@ -253,7 +253,7 @@
 
                     </div>
                 </div>
-                <div class="col-mid-4 col-12">
+                <div class="col-md-4 col-12">
                     <div class="square">
                         <img src="a1.jpg" alt="" class="jsr">
                         <h5>Tech Fest 2024 Winner</h5>
@@ -292,7 +292,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+<script>
+    const myCarouselElement = document.querySelector('#carouselExampleCaptionsFade')
 
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 1000
+  
+})
+</script>
 </body>
 
 </html>
